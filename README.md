@@ -1,11 +1,11 @@
 # whoop-recovery-pred
-# 💤 Predicting Recovery Scores from WHOOP Data
+# Predicting Recovery Scores from WHOOP Data
 
 This project uses personal WHOOP data to build a machine learning model that predicts daily recovery scores based on physiological, behavioral, and workout metrics. The model was developed using Python and trained in a Jupyter environment.
 
 ---
 
-## 📈 Overview
+## Overview
 
 **Goal:** Predict daily WHOOP recovery scores using both same-day and previous-day data, such as heart rate variability, sleep metrics, workout strain, and journal entries.
 
@@ -13,7 +13,7 @@ This project uses personal WHOOP data to build a machine learning model that pre
 
 ---
 
-## 🗃️ Data Sources
+## Data Sources
 
 The dataset was created by exporting and merging four personal WHOOP CSV files:
 - `physiological_cycles.csv`: HRV, resting HR, respiratory rate, recovery score, strain
@@ -25,7 +25,7 @@ All data was merged and aligned by date. Lag features were created to include in
 
 ---
 
-## 🔍 Features Used
+## Features Used
 
 | Feature | Description |
 |--------|-------------|
@@ -39,7 +39,7 @@ All data was merged and aligned by date. Lag features were created to include in
 
 ---
 
-## 📊 Results
+## Results
 
 After testing different configurations, the **best model** used **same-day and 1-day lag features**:
 
@@ -52,7 +52,7 @@ This means the model predicts daily recovery scores within ±7.3% on average, an
 
 ---
 
-## 🔥 Key Insights
+## Key Insights
 
 - **Heart rate variability** is by far the strongest predictor of recovery.
 - **Resting heart rate**, **sleep performance**, and **previous day strain** also contribute significantly.
@@ -61,17 +61,15 @@ This means the model predicts daily recovery scores within ±7.3% on average, an
 
 ---
 
-## 📉 Visualization Samples
+## Visualization Samples
 
-- 🔥 **Feature Importance Plot**  
-- 📊 **Correlation Heatmap**  
-- 🧠 **Actual vs. Predicted Recovery Scatter Plot**
-
-![Example](path/to/feature_importance.png)
+- **Feature Importance Plot**  
+- **Correlation Heatmap**  
+- **Actual vs. Predicted Recovery Scatter Plot**
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - Python (pandas, numpy, scikit-learn, seaborn, matplotlib)
 - Jupyter Notebook / VS Code
@@ -79,7 +77,7 @@ This means the model predicts daily recovery scores within ±7.3% on average, an
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 - Try time-aware models (XGBoost with time features, or RNNs)
 - Build a dashboard for daily recovery forecasting
@@ -87,7 +85,7 @@ This means the model predicts daily recovery scores within ±7.3% on average, an
 
 ---
 
-## 🙋‍♀️ About Me
+## About Me
 
 This project was built by Ritika Singh, a student-athlete and data-driven product thinker passionate about wellness, performance, and applied machine learning.
 
